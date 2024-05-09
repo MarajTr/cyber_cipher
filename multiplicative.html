@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplicative Cipher</title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+<div class="container">
+    <h2>Multiplicative Cipher Encryption/Decryption</h2>
+    <div class="form-group">
+        <label for="multiplicativePlaintext">Text:</label>
+        <textarea id="multiplicativePlaintext" rows="4"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="multiplicativeKey">Key:</label>
+        <input type="number" id="multiplicativeKey">
+    </div>
+    <div class="form-group">
+        <button onclick="performMultiplicativeEncryption()">Encrypt</button>
+        <button onclick="performMultiplicativeDecryption()">Decrypt</button>
+    </div>
+    <div class="form-group">
+        <label for="multiplicativeResult">Result:</label>
+        <textarea id="multiplicativeResult" rows="4" readonly></textarea>
+    </div>
+    <button class="homeBtn " style="--i:#00bfff;" type="button" onclick="document.location='index.html'">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Encryption and Decryption</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="contactForm">
+                <h2>Encrypt and Decrypt Text</h2>
+
+                <div class="inputBox">
+                    <span>Enter Text:</span>
+                    <input type="text" id="inputText" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Enter Additive Cipher Key:</span>
+                    <input type="number" id="additiveKey" required>
+                </div>
+
+                <div class="inputBox">
+                    <span>Enter Shift Key:</span>
+                    <input type="number" id="shiftKey" required>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Additive Shift Left" onclick="encrypt()">
+                </div>
+
+                <div class="inputBox">
+                    <span>Cipher Text:</span>
+                    <textarea id="cipherText" readonly></textarea>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" value="Shift Right Subtractive" onclick="decrypt()">
+                </div>
+
+                <div class="inputBox">
+                    <span>Decrypted Text:</span>
+                    <textarea id="decryptedText" readonly></textarea>
+                </div>
+            </div>
+            <button class="homeBtn " style="--i:#00bfff;" type="button" onclick="document.location='index.html'">Back</button>
+        </div>
+    </section>
+
+   <script src="/script.js"></script>
+</body>
+</html>
